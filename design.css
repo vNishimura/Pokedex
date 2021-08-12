@@ -1,0 +1,186 @@
+body{
+    background: #C80727;
+}
+div#topBar{
+    height: 80px;
+    width: 100% ;
+    background: #C80727;
+    padding: 10px 0 0 30px;
+    box-shadow: 0 10px rgba(0, 0, 0, 0.400);
+
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* div:before {
+    content: '';
+    position: absolute;
+    bottom: 0; right: 50%;
+    border-bottom: 60px solid #680414;
+    border-left: 80px solid #AD0622;
+    box-shadow: 10px 0 rgba(0, 0, 0, 0.082); 
+    width: 0;
+}
+
+div#curve2{
+    height: 60px;
+    width: 50%;
+    background: #AD0622 ;
+    float: right;
+
+    position: absolute;
+    bottom: -10px;
+    right: 0;
+} */
+
+div#camera{
+    width: 60px;
+    height: 60px;
+    border: 5px solid #fff;
+    float: left;
+    
+    background: radial-gradient(#05fbfb, #29abe3);
+    background: -webkit-radial-gradient(#05fbfb, #29abe3);
+    background: -moz-radial-gradient(#05fbfb, #29abe3);
+    background: -o-radial-gradient(#05fbfb, #29abe3);
+    
+    border-radius: 35px;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+}
+
+div#curve1{float:left}
+div#redButton{
+    width: 15px;
+    height: 15px;
+    margin-top: 5px;
+    margin-right: 10px;
+    margin-left: 50px;
+    align-items:flex-start ;
+    float: left;
+
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -o-border-radius: 20px;
+    
+    background: radial-gradient(#fb7b7b, #fb0505);
+    background: -webkit-radial-gradient(#fb7b7b, #fb0505);
+    background: -moz-radial-gradient(#fb7b7b, #fb0505);
+    background: -o-radial-gradient(#fb7b7b, #fb0505);
+}
+
+div#yellowButton{
+    width: 15px;
+    height: 15px;
+    margin-top: 5px;
+    margin-right: 30px;
+    margin-left: 30px;
+    float: left;
+
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -o-border-radius: 20px;
+    
+    background: radial-gradient(#fbfb9b, #fbfb05);
+    background: -webkit-radial-gradient(#fbfb9b, #fbfb05);
+    background: -moz-radial-gradient(#fbfb9b, #fbfb05);
+    background: -o-radial-gradient(#fbfb9b, #fbfb05);
+}
+
+div#greenButton{
+    width: 15px;
+    height: 15px;
+    margin-top: 5px;
+    margin-left: 10px;
+    float: left;
+
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -o-border-radius: 20px;
+    
+    background: radial-gradient(#b0fb7b, #50fb05);
+    background: -webkit-radial-gradient(#b0fb7b, #50fb05);
+    background: -moz-radial-gradient(#b0fb7b, #50fb05);
+    background: -o-radial-gradient(#b0fb7b, #50fb05);
+}
+
+div#barrinha{
+    width: 80px;
+    margin-top: 40px;
+    position:absolute ;
+    left: 150px;
+    /* box-shadow: 0 4px 6px -5px hsl(0,0%,40%); */
+    /* float:left */
+}
+input[name="pesquisa"]{
+    width: 280px;
+    border-radius: 20px;
+    background: #AD0622;
+    float: left;
+}
+
+input[name="searchButton"]{
+    /* shape-rendering: geometricPrecision; */
+    /* width: 30px; */
+    float: left;
+    /* align-items: baseline; */
+    margin:1em;
+    border:none;
+    padding:0.25em 3em 0.25em 1em;
+    text-align:left;
+    background:
+      linear-gradient(-120deg, transparent 1em, #AD0622 1.05em , #AD0622 1.5em, transparent 1.45em, transparent 2em, #AD0622 2.05em) top no-repeat,
+      linear-gradient(300deg, transparent 1em, #AD0622 1.05em , #AD0622 1.5em, transparent 1.45em, transparent 2em, #AD0622 2.05em) bottom no-repeat ;
+    background-size: 100% 50%;
+    color:white
+  
+}
+/* input[name="searchButton"]{
+        background: #950006;
+        border: none;
+        display: inline-block;
+        height: 28px;
+        line-height: 28px;
+        position: relative;
+        text-decoration: none;
+        width: 100px
+}
+    
+input:before{
+        background: #950006;
+        border: none;
+        content: '';
+        display: block;
+        height: 20px;
+        left: 90px;
+        position: absolute;
+        top: 4px;
+        -moz-transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+        width: 21px;
+    } */
+/* input[name="searchButton"]{
+    color: #fff;
+    background: none;
+    border: none;
+    font-weight: bold;
+    position: relative;
+    width: 120px;
+    height: 28px;
+} */
+
+
+.arrow-down{
+    width: 0;
+    height: 0px;
+    border-left: 20px solid blue;
+    border-right:20px solid blue;
+
+    border-top: 20px solid blue;
+}
