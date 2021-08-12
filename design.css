@@ -101,7 +101,7 @@ input[name="pesquisa"]{
 }
 
 input[name="searchButton"]{
-    float: right;
+    float: left;
     margin:1em;
     border:none;
     padding:0.25em 3em 0.25em 1em;
