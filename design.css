@@ -13,27 +13,6 @@ div#topBar{
     top: 0;
 }
 
-/* div:before {
-    content: '';
-    position: absolute;
-    bottom: 0; right: 50%;
-    border-bottom: 60px solid #680414;
-    border-left: 80px solid #AD0622;
-    box-shadow: 10px 0 rgba(0, 0, 0, 0.082); 
-    width: 0;
-}
-
-div#curve2{
-    height: 60px;
-    width: 50%;
-    background: #AD0622 ;
-    float: right;
-
-    position: absolute;
-    bottom: -10px;
-    right: 0;
-} */
-
 div#camera{
     width: 60px;
     height: 60px;
@@ -113,8 +92,6 @@ div#barrinha{
     margin-top: 40px;
     position:absolute ;
     left: 150px;
-    /* box-shadow: 0 4px 6px -5px hsl(0,0%,40%); */
-    /* float:left */
 }
 input[name="pesquisa"]{
     width: 280px;
@@ -124,10 +101,7 @@ input[name="pesquisa"]{
 }
 
 input[name="searchButton"]{
-    /* shape-rendering: geometricPrecision; */
-    /* width: 30px; */
     float: left;
-    /* align-items: baseline; */
     margin:1em;
     border:none;
     padding:0.25em 3em 0.25em 1em;
@@ -138,49 +112,4 @@ input[name="searchButton"]{
     background-size: 100% 50%;
     color:white
   
-}
-/* input[name="searchButton"]{
-        background: #950006;
-        border: none;
-        display: inline-block;
-        height: 28px;
-        line-height: 28px;
-        position: relative;
-        text-decoration: none;
-        width: 100px
-}
-    
-input:before{
-        background: #950006;
-        border: none;
-        content: '';
-        display: block;
-        height: 20px;
-        left: 90px;
-        position: absolute;
-        top: 4px;
-        -moz-transform: rotate(45deg);
-        -webkit-transform: rotate(45deg);
-        -o-transform: rotate(45deg);
-        transform: rotate(45deg);
-        width: 21px;
-    } */
-/* input[name="searchButton"]{
-    color: #fff;
-    background: none;
-    border: none;
-    font-weight: bold;
-    position: relative;
-    width: 120px;
-    height: 28px;
-} */
-
-
-.arrow-down{
-    width: 0;
-    height: 0px;
-    border-left: 20px solid blue;
-    border-right:20px solid blue;
-
-    border-top: 20px solid blue;
 }
