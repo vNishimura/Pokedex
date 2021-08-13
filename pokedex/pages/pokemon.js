@@ -1,9 +1,11 @@
 import React from 'react';
 import styles from '../styles/Home.module.css'
 import Link from 'next/link';
+import TopBar from '../components/topBar';
 export default function pokemon({poke}) {
     return (
         <body>
+            <TopBar/>
             <a> 
                 <img width="179px" height="179px" src={poke.image} alt={poke.name}/>
                 <p> Name: {poke.name}</p>
