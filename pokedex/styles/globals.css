@@ -16,7 +16,7 @@ a {
   box-sizing: border-box;
 }
 
-  /*  SCROLL  */  
+   /* SCROLL   
 /* width */
 ::-webkit-scrollbar {
   width: 12px;
@@ -33,4 +33,4 @@ a {
 ::-webkit-scrollbar-thumb {
   background: #8d061c;
   border-radius: 10px;
-}
+} 

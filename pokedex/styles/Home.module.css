@@ -2,8 +2,7 @@
   height: 80px;
   width: 100% ;
   padding: 10px 0 0 30px;
-  box-shadow: 0 10px rgba(0, 0, 0, 0.400);
-
+  box-shadow: 0 10px rgba(0, 0, 0, 0.35);
   position: absolute;
   left: 0;
   top: 0;
@@ -15,24 +14,47 @@
   justify-content: center;
   flex-direction: column;
   flex-wrap: wrap;
+  position: relative;
   max-width: 80%;
-  margin-top: 3rem;
-  margin-left: 17.5%;
-  margin-right:13.5%;
+  margin: 3rem 13.5% 0 17.5%;
   grid-template-columns: repeat(auto-fill, minmax(240px,300px));
   position: absolute;
 }
 
 .pokeCard{
-  width: 209px;
-  height: 272.2px;
+  width: 229px;
+  height: 292.2px;
   border-radius: 5px;
   background: #C4C4C4;
   color: #1F1F1F;
+  box-sizing: border-box;
+  border: 1px solid black;
+  box-sizing: content-box;
   align-items: center;
-  margin-top: 3rem;
-  margin-left: 7%;
-  margin-right: 5%;
+  margin: 3rem 5% 0 7%;
+}
+
+.pokeCard:hover,
+.pokeCard:focus,
+.pokeCard:active{
+  color: white;
+  border-color: white;
+}
+
+.pokeCard p{
+  margin: 12px 0 0 7.55px;
+  font-size: 21px;
+}
+
+.pokeCard span{
+  margin: 9.55px 0 0 7.55px;
+  font-size: 18px;
+}
+
+.pokeCard img{
+  margin:7.55px 0 0 7.55px;
+  border-radius: 5px;
+  background: white;
 }
 
 .typeCard{
@@ -139,16 +161,12 @@
 .searchButton{
   height: 24px;
   width: 24px;
-  padding: 0 0 0 5px;
   border-radius: 12px;
-  margin-top: -1px;
-  margin-left: 25px;
-  font-size: 8px;
-  text-align: left;
+  margin-left: 30px;
+  font-size: 10px;
   background:#C80727;
-  color:white
+  color:white;
 }
-
 
 
 .title a {
@@ -178,7 +196,6 @@
   font-size: 1.5rem;
 }
 
-
 .card {
   margin: 1rem;
   padding: 1.5rem;
@@ -189,34 +206,4 @@
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
   width: 45%;
-}
-
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
-}
-
-.card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
-}
-
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
-}
-
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
-}
-
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
-  }
 }

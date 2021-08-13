@@ -14,21 +14,21 @@ export default function Home({pokemon}) {
         </Head>
         <TopBar/>
       </header>
-
+      <h1></h1>
       <main className={styles.lista}>
-          {pokemon.map((poke, index)=>(
-              <div 
-              className={styles.pokeCard}
-              key={index}>
-                <Link href={`/pokemon?id=${index + 1}`}>
-                <a> 
-                  <img width="199px" height="199px" src={poke.image} alt={poke.name}/>
-                  <span>{index + 1}º </span>
-                  {poke.name}
-                </a>
-                </Link>
-              </div>
-          ))}
+        {pokemon.map((poke, index)=>(
+            <div 
+            className={styles.pokeCard}
+            key={index}>
+              <Link href={`/pokemon?id=${index + 1}`}>
+              <a> 
+                <img width="214px" height="214px" src={poke.image} alt={poke.name}/>
+                <span>Nº{index + 1} </span>
+                <strong><p>{poke.name.charAt(0).toUpperCase() + poke.name.slice(1)}</p></strong>
+              </a>
+              </Link>
+            </div>
+        ))}
       </main>
       
     </body>
