@@ -8,7 +8,7 @@ export default function Card(){
         href="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/001.png"
         className={styles.pokeCard}
         >
-            <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/001.png" width={220} height={220}/>
+            <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/001.png" width="199px" height="199px"/>
             <p>
                 <script>
                     {/* 

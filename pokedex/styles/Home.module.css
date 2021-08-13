@@ -17,7 +17,8 @@
   flex-wrap: wrap;
   max-width: 80%;
   margin-top: 3rem;
-  margin-left: 200px;
+  margin-left: 17.5%;
+  margin-right:13.5%;
   grid-template-columns: repeat(auto-fill, minmax(240px,300px));
   position: absolute;
 }
@@ -25,9 +26,13 @@
 .pokeCard{
   width: 209px;
   height: 272.2px;
+  border-radius: 5px;
   background: #C4C4C4;
   color: #1F1F1F;
+  align-items: center;
   margin-top: 3rem;
+  margin-left: 7%;
+  margin-right: 5%;
 }
 
 .typeCard{
@@ -122,7 +127,7 @@
   width: 460px;
   margin-top: 40px;
   position:absolute ;
-  left: 150px;
+  left: 140px;
 }
 .searchBar{
   width: 360px;
