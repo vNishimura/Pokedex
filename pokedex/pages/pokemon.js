@@ -1,9 +1,31 @@
 import React from 'react';
 import styles from '../styles/Home.module.css'
 import Link from 'next/link';
-export default function Pokemon({poke}) {
-    console.log(poke);
-    return <div></div>
+import TopBar from '../components/topBar';
+export default function pokemon({poke}) {
+    return (
+        <body>
+            <TopBar/>
+            <a> 
+                <img width="179px" height="179px" src={poke.image} alt={poke.name}/>
+                <p> Name: {poke.name}</p>
+                <p> ID: {poke.id} </p>
+                <p> Height: {poke.height/10}m </p>
+                <p> Base EXP: {poke.base_experience}</p>
+                <p> Weight: {poke.weight/10}kg </p>
+                Types: {poke.types.map((type, id) => (
+                    <p key = {id}>{type.type.name}</p>
+                
+                ))}
+                Abilities: {poke.abilities.map((abilities, id) => (
+                    <p key = {id}>{abilities.ability.name}</p>
+                ))}
+                Stats: {poke.stats.map((stats, id) => (
+                    <p key = {id}> {stats.stat.name} = {stats.base_stat}</p>
+                ))}
+            </a>
+        </body>
+    );
 }
 
 export async function getServerSideProps({query}) {

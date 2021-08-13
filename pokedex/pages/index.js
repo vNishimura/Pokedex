@@ -6,7 +6,6 @@ import Link from 'next/link'
 import TopBar from '../components/topBar.js'
 
 export default function Home({pokemon}) {
-  console.log(pokemon);
   return (
     <body>
       <header>
@@ -38,7 +37,7 @@ export default function Home({pokemon}) {
 
 export async function getStaticProps(context){
   try {
-    const res = await fetch('https://pokeapi.co/api/v2/pokemon?limit=151');
+    const res = await fetch('https://pokeapi.co/api/v2/pokemon?limit=898');
     const {results} = await res.json();
     const pokemon = results.map((result, index) => {
       const formatedIndex = ('00' + (index + 1)).slice(-3);
