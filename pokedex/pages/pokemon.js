@@ -9,6 +9,7 @@ export default function pokemon({poke}) {
             <a> 
                 <img width="179px" height="179px" src={poke.image} alt={poke.name}/>
                 <p> Name: {poke.name}</p>
+                <p> ID: {poke.id} </p>
                 <p> Height: {poke.height/10}m </p>
                 <p> Base EXP: {poke.base_experience}</p>
                 <p> Weight: {poke.weight/10}kg </p>
