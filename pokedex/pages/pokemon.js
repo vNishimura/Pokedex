@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from '../styles/Home.module.css'
 import Link from 'next/link';
-export default function pokemon({poke}) {
+export default function Pokemon({poke}) {
     console.log(poke);
     return <div></div>
 }
