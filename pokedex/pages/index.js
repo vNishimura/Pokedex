@@ -22,9 +22,19 @@ export default function Home({pokemon}) {
           <input type="button" value="Ok" name="searchButton" onClick="pesquisar()" className={styles.searchButton}></input>
         </div>
       </div>
-      <div className={styles.lista}>
+
+      <main className={styles.lista}>
         <Card/>
-      </div>
+        <Card/>
+        <Card/>
+        <Card/>
+        <Card/>
+        <Card/>
+        <Card/>
+        <Card/>
+        <Card/>
+        <Card/>
+      </main>
       
     </body>
   )

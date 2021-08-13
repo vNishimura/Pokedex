@@ -1,26 +1,6 @@
-.container {
-  min-height: 100vh;
-  padding: 0 0.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
-.main {
-  padding: 5rem 0;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 .topBar {
   height: 80px;
   width: 100% ;
-  /* background: #C80727; */
   padding: 10px 0 0 30px;
   box-shadow: 0 10px rgba(0, 0, 0, 0.400);
 
@@ -30,13 +10,16 @@
 }
 
 .lista {
-  display: flex;
+  display: grid;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   flex-wrap: wrap;
-  max-width: 1000px;
+  max-width: 80%;
   margin-top: 3rem;
+  margin-left: 200px;
+  grid-template-columns: repeat(auto-fill, minmax(240px,300px));
+  position: absolute;
 }
 
 .pokeCard{
@@ -44,6 +27,7 @@
   height: 272.2px;
   background: #C4C4C4;
   color: #1F1F1F;
+  margin-top: 3rem;
 }
 
 .typeCard{
