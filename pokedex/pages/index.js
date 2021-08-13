@@ -3,7 +3,8 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Card from '../components/card'
 
-export default function Home() {
+export default function Home({pokemon}) {
+  console.log(pokemon);
   return (
     <body>
       <div className={styles.topBar}>
@@ -18,7 +19,7 @@ export default function Home() {
         <a className={styles.greenButton}/>
         <div className={styles.searchArea}>
           <input type="textBox" placeholder="Search" name="pesquisa" id="searchBar" className={styles.searchBar}></input>
-          <input type="button" value="Ok" name="searchButton" onclick="pesquisar()" className={styles.searchButton}></input>
+          <input type="button" value="Ok" name="searchButton" onClick="pesquisar()" className={styles.searchButton}></input>
         </div>
       </div>
       <div className={styles.lista}>
@@ -27,4 +28,24 @@ export default function Home() {
       
     </body>
   )
+}
+
+export async function getStaticProps(context){
+  try {
+    const res = await fetch('https://pokeapi.co/api/v2/pokemon?limit=151');
+    const {results} = await res.json();
+    const pokemon = results.map((result, index) => {
+      const formatedIndex = ("00" + (index + 1)).slice(-3);
+      const image = `https://assets.pokemon.com/assets/cms2/img/pokedex/full/${formatedIndex}.png`
+      return {
+        ...result,
+        image,
+      };
+    })
+    return {
+      props: {pokemon},
+    };
+  } catch (err) {
+    console.error(err);
+  };
 }
