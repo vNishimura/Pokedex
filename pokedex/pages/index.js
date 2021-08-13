@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Card from '../components/card'
+import Link from 'next/link'
 
 export default function Home({pokemon}) {
   console.log(pokemon);
@@ -24,16 +25,19 @@ export default function Home({pokemon}) {
       </header>
 
       <main className={styles.lista}>
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
+      <ul>
+        {pokemon.map((poke, index)=>(
+            <li key={index}>
+              <Link href={`/pokemon?id=${index + 1}`}>
+              <a> 
+                <img width="179px" height="179px" src={poke.image} alt={poke.name}/>
+                <span>{index + 1}º </span>
+                {poke.name}
+              </a>
+              </Link>
+            </li>
+        ))}
+      </ul>
       </main>
       
     </body>
