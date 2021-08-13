@@ -6,10 +6,10 @@ export default function Card(){
     return(
         <div className={styles.lista}>
             <a
-            href="https://youtube.com"
+            href="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/001.png"
             className={styles.pokeCard}
             >
-                <Image src="/sla.png" width={120} height={120} />
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/001.png" width="220px" height="220px"/>
                 <p>
                     <script>
                         {/* 

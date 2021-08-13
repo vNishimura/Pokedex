@@ -19,7 +19,7 @@
 
 .topBar {
   height: 80px;
-  width: 1465px ;
+  width: 100% ;
   /* background: #C80727; */
   padding: 10px 0 0 30px;
   box-shadow: 0 10px rgba(0, 0, 0, 0.400);
