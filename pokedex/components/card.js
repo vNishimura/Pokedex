@@ -1,15 +1,15 @@
-import React from "next/React"
+// import React from "next/React"
 import Image from "next/image"
 import styles from "../styles/Home.module.css"
 
-export default function card(){
+export default function Card(){
     return(
         <div className={styles.lista}>
             <a
-            href="LINK_PaginaEspecifica"
+            href="https://youtube.com"
             className={styles.pokeCard}
             >
-                <Image src="" width={120} height={120} />
+                <Image src="/sla.png" width={120} height={120} />
                 <p>
                     <script>
                         {/* 
