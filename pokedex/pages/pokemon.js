@@ -27,16 +27,23 @@ export default function pokemon({poke}) {
                     <h1> Name: {poke.name}</h1>
                     <div className={styles.caseBox}>
                         <div className={styles.dataBox}>              
-                            <p> ID: {poke.id} </p>
-                            <p> Height: {poke.height/10}m </p>
-                            <p> Base EXP: {poke.base_experience}</p>
-                            <p> Weight: {poke.weight/10}kg </p>
-                            {poke.abilities.map((abilities, id) => (
-                                <p key = {id}>{abilities.ability.name}</p>
-                            ))}
+                            <a nameclass={styles.column1Data}>
+                                <h2>Height</h2>
+                                <p> {poke.height/10}m </p>
+                                <h2>Weight</h2>
+                                <p>{poke.weight/10}kg </p>
+                            </a>
+                            <a nameclass={styles.column2Data}>
+                                <h2>Base XP</h2>
+                                <p>{poke.base_experience}</p>
+                                <h2>Abilities</h2>
+                                {poke.abilities.map((abilities, id) => (
+                                    <a key = {id}>{abilities.ability.name}, </a>
+                                ))}
+                            </a>
                         </div> 
                     </div>
-                    <section>
+                    <section className={styles.stickersArea}>
                         <h2>Type</h2>
                         {poke.types.map((type, id) => (
                             <a key = {id}>{type.type.name} |</a>

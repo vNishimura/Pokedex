@@ -177,28 +177,29 @@
 .column2{
   width: 45%;
   position: absolute;
+  color: #ebebeb;
 }
+
 .column1{
   left: 0;
+  font-size: small;
 }
 .column2{
   right: 0;
 }
-
-.column1 a{
-  font-size: small;
-  color: #ebebeb;
+.column2 h1{
+  text-shadow: 2.5px 2.5px #1f1f1f4f;
 }
 
 .imageBox{
-  width: 350px;
+  width: 420px;
   height: 350px;
   border-radius: 10px;
   background: #ebebeb;
   border: 1px solid black
 }
 .imageBox img{
-  width: 330px;
+  width: 400px;
   height: 330px;
   background: #c4c4c4;
   margin: 10px;
@@ -207,7 +208,7 @@
 }
 
 .statistics{
-  width: 350px;
+  width: 420px;
   height: 250px;
   background: #ebebeb;
   border-radius: 10px;
@@ -217,7 +218,7 @@
 }
 
 .gridStatistics{
-  width: 330px;
+  width: 400px;
   height: 240px;
   margin: 5px 10px 5px 10px;
   background: #c4c4c4;
@@ -225,15 +226,15 @@
   position: absolute;
 }
 
-.column2:h2{
-  color: #ebebeb;
-}
-
 .dataBox{
+  display: flex;
   width: 330px;
   height: 230px;
   margin: 10px;
+  align-items: center;
+  justify-content: center;
   background: #c4c4c4;
+  color: #1f1f1f;
   border: 1px solid black;
   border-radius: 10px;
 }
@@ -245,12 +246,28 @@
   border-radius: 10px;
 }
 
+.column1Data,
+.column2Data{
+  text-align: center;
+  width: 100px;
+  height: 180px;
+  font-size: large;
+  /* margin: 25px 30px 25px 15px ; */
+}
+.column1Data{
+  margin: 0 0 0 -20px;
+}
+
 .missgnoImg {
   padding: 0px;
   position: absolute;
   top: 0;
   left: 0;
   margin: 100px;
+}
+
+.stickersArea{
+  text-shadow: 2.5px 2.5px #1f1f1f4b;
 }
 
 .notFound {
