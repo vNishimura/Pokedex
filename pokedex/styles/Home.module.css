@@ -145,6 +145,106 @@
   color:white;
 }
 
+
+/* Página Escífica */
+/*
+<specificContainer>
+  <column1>
+    <imageBox/>
+    <statistics/>
+  </column1>
+
+  <column2>
+    <h1></h1>
+    <dataBox/>
+    <h2> <stickersSpecific/> </h2>
+  </column2>
+</specificContainer>
+ */
+.specificContainer{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  margin: 8rem auto 3rem auto;
+  position: absolute;
+  top: 20rem;
+  left: 12.5%;
+}
+.column1,
+.column2{
+  width: 45%;
+  position: absolute;
+}
+.column1{
+  left: 0;
+}
+.column2{
+  right: 0;
+}
+
+.column1 a{
+  font-size: small;
+  color: #ebebeb;
+}
+
+.imageBox{
+  width: 350px;
+  height: 350px;
+  border-radius: 10px;
+  background: #ebebeb;
+  border: 1px solid black
+}
+.imageBox img{
+  width: 330px;
+  height: 330px;
+  background: #c4c4c4;
+  margin: 10px;
+  border-radius: 10px;
+  border: 1px solid black
+}
+
+.statistics{
+  width: 350px;
+  height: 250px;
+  background: #ebebeb;
+  border-radius: 10px;
+  margin-top: 30px;
+  border: 1px solid black;
+  /* Esse vai ser osso */
+}
+
+.gridStatistics{
+  width: 330px;
+  height: 240px;
+  margin: 5px 10px 5px 10px;
+  background: #c4c4c4;
+  border-radius: 10px;
+  position: absolute;
+}
+
+.column2:h2{
+  color: #ebebeb;
+}
+
+.dataBox{
+  width: 330px;
+  height: 230px;
+  margin: 10px;
+  background: #c4c4c4;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.caseBox{
+  width: 350px;
+  height: 250px;
+  background: #ebebeb;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
 .missgnoImg {
   padding: 0px;
   position: absolute;
