@@ -15,7 +15,6 @@ export default function pokemon({poke}) {
                 <p> Weight: {poke.weight/10}kg </p>
                 Types: {poke.types.map((type, id) => (
                     <p key = {id}>{type.type.name}</p>
-                
                 ))}
                 Abilities: {poke.abilities.map((abilities, id) => (
                     <p key = {id}>{abilities.ability.name}</p>

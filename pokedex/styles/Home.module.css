@@ -16,9 +16,9 @@
   flex-wrap: wrap;
   position: relative;
   max-width: 80%;
-  margin: 3rem 13.5% 0 17.5%;
-  grid-template-columns: repeat(auto-fill, minmax(240px,300px));
-  position: absolute;
+  margin: 7rem auto 3rem auto;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  position: relative;
 }
 
 .pokeCard{
@@ -31,7 +31,7 @@
   border: 1px solid black;
   box-sizing: content-box;
   align-items: center;
-  margin: 3rem 5% 0 7%;
+  margin: 1rem auto 1rem auto;
 }
 
 .pokeCard:hover,
@@ -54,7 +54,7 @@
 .pokeCard img{
   margin:7.55px 0 0 7.55px;
   border-radius: 5px;
-  background: white;
+  background: #ebebeb;;
 }
 
 .typeCard{

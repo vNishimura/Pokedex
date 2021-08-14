@@ -23,7 +23,7 @@ export default function Home({pokemon}) {
               <Link href={`/pokemon?id=${index + 1}`}>
               <a> 
                 <img width="214px" height="214px" src={poke.image} alt={poke.name}/>
-                <span>Nº{index + 1} </span>
+                <span>Nº {index + 1} </span>
                 <strong><p>{poke.name.charAt(0).toUpperCase() + poke.name.slice(1)}</p></strong>
               </a>
               </Link>
