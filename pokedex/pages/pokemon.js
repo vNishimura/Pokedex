@@ -39,6 +39,8 @@ export async function getServerSideProps({query}) {
             props: { poke },
         };
     } catch (err) {
-        console.log(err);
-    }   
-}
+        return {
+            notFound: true
+          }
+        }
+}   

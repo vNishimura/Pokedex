@@ -144,3 +144,31 @@
   background:#C80727;
   color:white;
 }
+
+.missgnoImg {
+  padding: 0px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 100px;
+}
+
+.notFound {
+  padding: 0;
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  width: 100%
+}
+
+.notFound h1{
+  align-self: center;
+  border: 0 0 1px 0 solib black;
+}
+
+.notFound section {
+  align-self:center;
+  width: 70%;
+}
