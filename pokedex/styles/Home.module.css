@@ -71,11 +71,12 @@
 }
 
 .camera{
-  width: 60px;
-  height: 60px;
+  width: 70px;
+  height: 70px;
   border: 5px solid #fff;
   float: left;
   border-radius: 35px;
+  margin-top: -5px;
   background: radial-gradient(#05fbfb, #29abe3);
   background: -webkit-radial-gradient(#05fbfb, #29abe3);
   background: -moz-radial-gradient(#05fbfb, #29abe3);
@@ -191,20 +192,43 @@
   text-shadow: 2.5px 2.5px #1f1f1f4f;
 }
 
-.imageBox{
+.imageContainer{
+  display: inline-block;
+  background: #ebebeb;
   width: 420px;
   height: 350px;
   border-radius: 10px;
-  background: #ebebeb;
-  border: 1px solid black
+  border: 1px solid black;
 }
-.imageBox img{
+.imageContainer:before{
+  content: '';
+  position: absolute;
+  top: 289.5px; left: 0;
+  border-bottom: 60px solid #C80727;
+  border-right: 65px solid  #ebebeb;
+  width: 0;
+}
+.imageBox{
+  display: inline-block;
   width: 400px;
   height: 330px;
-  background: #c4c4c4;
-  margin: 10px;
   border-radius: 10px;
-  border: 1px solid black
+  background: #c4c4c4;
+  border: 1px solid black;
+  margin: 10px;
+}
+.imageBox::before{
+  content: '';
+  position: absolute;
+  top: 289.5px; left: 10px;
+  border-bottom: 51px solid transparent;
+  border-right: 56px solid  #c4c4c4;
+  width: 0;
+}
+
+.imagem{
+  width: 400px;
+  height: 330px;
 }
 
 .statistics{
@@ -228,34 +252,30 @@
 
 .dataBox{
   display: flex;
-  width: 330px;
-  height: 230px;
+  width: 400px;
+  height: 210px;
   margin: 10px;
-  align-items: center;
+  flex-direction: row;
+  gap: 25%;
   justify-content: center;
-  background: #c4c4c4;
+  text-align: center;
+  font-size: 20px;
+  background: #ebebeb;
   color: #1f1f1f;
   border: 1px solid black;
   border-radius: 10px;
 }
+.dataBox h3{
+  font-size: 15px;
+  font-weight:bolder;
+  padding-top: 10px;
+}
 .caseBox{
-  width: 350px;
-  height: 250px;
-  background: #ebebeb;
+  width: 420px;
+  height: 230px;
+  background: #c4c4c4;
   border: 1px solid black;
   border-radius: 10px;
-}
-
-.column1Data,
-.column2Data{
-  text-align: center;
-  width: 100px;
-  height: 180px;
-  font-size: large;
-  /* margin: 25px 30px 25px 15px ; */
-}
-.column1Data{
-  margin: 0 0 0 -20px;
 }
 
 .missgnoImg {

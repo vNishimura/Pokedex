@@ -8,8 +8,10 @@ export default function pokemon({poke}) {
             <header><TopBar/></header>
             <main className={styles.specificContainer}>   
                 <div className={styles.column1}>
-                    <div className={styles.imageBox}>
-                        <img src={poke.image} alt={poke.name}/>
+                    <div className={styles.imageContainer}>
+                        <div className={styles.imageBox}>
+                            <img src={poke.image} alt={poke.name} className={styles.imagem}/>
+                        </div>
                     </div>
                     <div className={styles.statistics}>
                         <div className={styles.gridStatistics}>
@@ -27,20 +29,21 @@ export default function pokemon({poke}) {
                     <h1> Name: {poke.name}</h1>
                     <div className={styles.caseBox}>
                         <div className={styles.dataBox}>              
-                            <a nameclass={styles.column1Data}>
-                                <h2>Height</h2>
+                            <div /*nameclass={styles.column1Data}*/>
+                                <h3>Height</h3>
                                 <p> {poke.height/10}m </p>
-                                <h2>Weight</h2>
+                                <h1></h1>
+                                <h3>Weight</h3>
                                 <p>{poke.weight/10}kg </p>
-                            </a>
-                            <a nameclass={styles.column2Data}>
-                                <h2>Base XP</h2>
+                            </div>
+                            <div /*nameclass={styles.column1Data}*/>
+                                <h3>Base XP</h3>
                                 <p>{poke.base_experience}</p>
-                                <h2>Abilities</h2>
+                                <h3>Abilities</h3>
                                 {poke.abilities.map((abilities, id) => (
                                     <a key = {id}>{abilities.ability.name}, </a>
                                 ))}
-                            </a>
+                            </div>
                         </div> 
                     </div>
                     <section className={styles.stickersArea}>
