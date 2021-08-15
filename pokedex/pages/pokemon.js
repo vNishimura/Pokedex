@@ -14,8 +14,97 @@ export default function pokemon({poke}) {
                         </div>
                     </div>
                     <div className={styles.statistics}>
-                        <div className={styles.gridStatistics}>
-                            
+                        <div className={styles.caseStatistics}>
+                            <div className={styles.gridStatistics}></div>
+                            <div className={styles.gridStatistics}></div>
+                            <div className={styles.gridStatistics}></div>
+                            <div className={styles.gridStatistics}></div>
+                            <div className={styles.gridStatistics}></div>
+                            <div className={styles.gridStatistics}></div>
+                            <div className={styles.gridStatistics}></div>
+                            <div className={styles.gridStatistics}></div>
+                            <div className={styles.gridStatistics}></div>
+                            <div className={styles.gridStatistics}></div>
+                            <div className={styles.gridStatistics}></div>
+                            <div className={styles.gridStatistics}></div>
+                            <div className={styles.gridStatistics}></div>
+                            <div className={styles.gridStatistics}></div>
+                            <div className={styles.gridStatistics}></div>
+                            <div className={styles.gridStatistics}></div>
+                            <div className={styles.gridStatistics}></div>
+                            <div className={styles.gridStatistics}></div>
+                            <div className={styles.gridStatistics}></div>
+                            <div className={styles.gridStatistics}></div>
+                            <div className={styles.gridStatistics}></div>
+                            <div className={styles.gridStatistics}></div>
+                            <div className={styles.gridStatistics}></div>
+                            <div className={styles.gridStatistics}></div>
+                            <div className={styles.gridStatistics}></div>
+                            <div className={styles.gridStatistics}></div>
+                            <div className={styles.gridStatistics}></div>
+                            <div className={styles.gridStatistics}></div>
+                            <div className={styles.gridStatistics}></div>
+                            <div className={styles.gridStatistics}></div>
+                            <div className={styles.gridStatistics}></div>
+                            <div className={styles.gridStatistics}></div>
+                            <div className={styles.gridStatistics}></div>
+                            <div className={styles.gridStatistics}></div>
+                            <div className={styles.gridStatistics}></div>
+                            <div className={styles.gridStatistics}></div>
+                            <div className={styles.gridStatistics}></div>
+                            <div className={styles.gridStatistics}></div>
+                            <div className={styles.gridStatistics}></div>
+                            <div className={styles.gridStatistics}></div>
+                            <div className={styles.gridStatistics}></div>
+                            <div className={styles.gridStatistics}></div>
+                            <div className={styles.gridStatistics}></div>
+                            <div className={styles.gridStatistics}></div>
+                            <div className={styles.gridStatistics}></div>
+                            <div className={styles.gridStatistics}></div>
+                            <div className={styles.gridStatistics}></div>
+                            <div className={styles.gridStatistics}></div>
+                            <div className={styles.gridStatistics}></div>
+                            <div className={styles.gridStatistics}></div>
+                            <div className={styles.gridStatistics}></div>
+                            <div className={styles.gridStatistics}></div>
+                            <div className={styles.gridStatistics}></div>
+                            <div className={styles.gridStatistics}></div>
+                            <div className={styles.gridStatistics}></div>
+                            <div className={styles.gridStatistics}></div>
+                            <div className={styles.gridStatistics}></div>
+                            <div className={styles.gridStatistics}></div>
+                            <div className={styles.gridStatistics}></div>
+                            <div className={styles.gridStatistics}></div>
+                            <div className={styles.gridStatistics}></div>
+                            <div className={styles.gridStatistics}></div>
+                            <div className={styles.gridStatistics}></div>
+                            <div className={styles.gridStatistics}></div>
+                            <div className={styles.gridStatistics}></div>
+                            <div className={styles.gridStatistics}></div>
+                            <div className={styles.gridStatistics}></div>
+                            <div className={styles.gridStatistics}></div>
+                            <div className={styles.gridStatistics}></div>
+                            <div className={styles.gridStatistics}></div>
+                            <div className={styles.gridStatistics}></div>
+                            <div className={styles.gridStatistics}></div>
+                            <div className={styles.gridStatistics}></div>
+                            <div className={styles.gridStatistics}></div>
+                            <div className={styles.gridStatistics}></div>
+                            <div className={styles.gridStatistics}></div>
+                            <div className={styles.gridStatistics}></div>
+                            <div className={styles.gridStatistics}></div>
+                            <div className={styles.gridStatistics}></div>
+                            <div className={styles.gridStatistics}></div>
+                            <div className={styles.gridStatistics}></div>
+                            <div className={styles.gridStatistics}></div>
+                            <div className={styles.gridStatistics}></div>
+                            <div className={styles.gridStatistics}></div>
+                            <div className={styles.gridStatistics}></div>
+                            <div className={styles.gridStatistics}></div>
+                            <div className={styles.gridStatistics}></div>
+                            <div className={styles.gridStatistics}></div>
+                            <div className={styles.gridStatistics}></div>
+                            <div className={styles.gridStatistics}></div>
                         </div>
                     </div>
                     <strong><a>
@@ -26,31 +115,35 @@ export default function pokemon({poke}) {
 
 
                 <div className={styles.column2}>
-                    <h1> Name: {poke.name}</h1>
+                    <h1>{poke.name.charAt(0).toUpperCase() + poke.name.slice(1)} - Nº{poke.id}</h1>
                     <div className={styles.caseBox}>
                         <div className={styles.dataBox}>              
-                            <div /*nameclass={styles.column1Data}*/>
+                            <div>
                                 <h3>Height</h3>
                                 <p> {poke.height/10}m </p>
                                 <h1></h1>
                                 <h3>Weight</h3>
                                 <p>{poke.weight/10}kg </p>
                             </div>
-                            <div /*nameclass={styles.column1Data}*/>
+                            <div>
                                 <h3>Base XP</h3>
                                 <p>{poke.base_experience}</p>
                                 <h3>Abilities</h3>
+                                <div>
                                 {poke.abilities.map((abilities, id) => (
-                                    <a key = {id}>{abilities.ability.name}, </a>
+                                    <a className={styles.abilitiesSpecific} key = {id} >{abilities.ability.name}</a>
                                 ))}
+                                </div>
                             </div>
                         </div> 
                     </div>
-                    <section className={styles.stickersArea}>
+                    <section>
                         <h2>Type</h2>
-                        {poke.types.map((type, id) => (
-                            <a key = {id}>{type.type.name} |</a>
-                        ))}
+                        <div className={styles.stickerArea}>
+                            {poke.types.map((type, id) => (
+                                <a className={styles.stickersSpecific} key = {id}>{type.type.name}</a>
+                            ))}
+                        </div>
                         <h2>Weakness</h2>
                         
                     </section>
@@ -77,3 +170,66 @@ export async function getServerSideProps({query}) {
           }
         }
 } 
+
+// export async function colorType({poke}){
+//     const faixa = document.getElementsByClassName('stickersSpecific').styles.background
+//     const typeArray=[]
+//     const pokeType = poke.types.type.name
+
+//     switch (pokeType){
+//         case 'normal':
+//             faixa = 'gray'
+//             break
+//         case 'fight':
+//             faixa = 'rgb(122,11,11)'
+//             break
+//         case 'flying':
+//             faixa = 'rgb(144,175,233)'
+//             break
+//         case 'poison':
+//             faixa = 'rgb(216,8,206)'
+//             break
+//         case 'ground':
+//             faixa = 'rgb(243,237,157)'
+//             break
+//         case 'rock':
+//             faixa = 'rgb(248,216,71)'
+//             break
+//         case 'bug':
+//             faixa = 'rgb(60,187,48)'
+//             break
+//         case 'ghost':
+//             faixa = 'rgb(91,11,116)'
+//             break
+//         case 'steel':
+//             faixa = 'rgb(211,192,192)'
+//             break
+//         case 'fire':
+//             faixa = 'red'
+//             break
+//         case 'water':
+//             faixa = 'blue'
+//             break
+//         case 'grass':
+//             faixa = 'yellowgreen'
+//             break
+//         case 'eletreic':
+//             faixa = 'yellow'
+//             break
+//         case 'psychic':
+//             faixa = 'rgb(238,25,170)'
+//             break
+//         case 'ice':
+//             faixa = 'rgb(95,207,252)'
+//             break
+//         case 'dragon':
+//             faixa = 'rgb(165,16,235)'
+//             break
+//         case 'dark':
+//             faixa = 'rgb(105,43,1)'
+//             break
+//         default:
+//             faixa = 'rgb(240,150.220)'
+//     }
+//     return(faixa)
+// }
